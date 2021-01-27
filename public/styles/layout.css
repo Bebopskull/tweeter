@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+
 html {
   box-sizing: border-box;
 }
@@ -14,12 +17,57 @@ html {
  * Global layout stuff
  */
 
-body {
+body{
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  flex-direction: column;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+body*{
+	
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+main{
+
+	width:90%;
+	align-self: center;
+	background-color: #545149;
+	background-color: #f4f1ec;
+
+
+}
+
+p{
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+
+section{
+	margin-bottom: 15px;
+	display: flex;
+}
+
+/*It should be only 90% of the width of its parent element
+It should be center aligned to the body
+It should have the same colour background as the <body> element*/
+
+
+
+
+
+
+
+
+
+
+
+

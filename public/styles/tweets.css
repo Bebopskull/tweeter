@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+.tweet{
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+	height: auto;
+	border: 4px solid #545149;
+	border-radius: 25;
+	overflow: none;
+}
+
+/*.tweet:hover{
+	box-shadow: 5px 5px #545149;
+}*/
+
+/*.tweet  .authorPresentation 
+	.tweetAuthorTag :hover{
+	mix-blend-mode: color-dodge;
+}*/
+
+.tweetHead{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 89vw;
+	height: 8vh;
+	margin-top: 0px;
+}
+
+.authorPresentation{
+	  display: flex;
+    flex-direction: row;
+    align-items: center;
+		mix-blend-mode:color-burn;
+		margin-left: 10px;
+}
+
+.tweetAvatar{
+	margin-right: 10px;
+}
+
+.tweetAuthorTag{
+	mix-blend-mode:color-burn;
+	margin: 10px;
+}
+
+.tweetContent{
+	display: flex;
+	width: 89vw;
+	height: 12vh;
+	border-bottom: 2px solid #545149;
+	/*justify-content: flex-end;*/
+	align-items: flex-end;
+	padding:10px;
+}
+
+.tweetFooter{
+	display: flex;
+	flex-direction: row;
+	width: 89vw;
+	height: 5vh;
+	justify-content: space-between;
+	align-items: center;
+	padding:10px;
+}
+
+.tweetFooter p{
+	padding: 0px;
+	margin: 0px;
+	font-size: 0.8em;
+}

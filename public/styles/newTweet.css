@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+.new-tweet{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+#tweet-text{
+	background-color: #f4f1ec;
+	border: none;
+  border-bottom: 4px solid #545149;
+  width: 90vw;
+  resize: none;
+
+  margin: 20px 0px; 
+}
+
+#tweet-text:focus {
+	outline:none;
+}
+
+
+#bajoTextInput{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	size: 90vw;
+}
+
+#tweetBtn{
+
+	/*color:#ffffff;*/
+	font-family: 'Bungee', cursive;
+	background: linear-gradient(45deg, rgba(179,45,45,1) 0%, rgba(45,150,191,1) 50%, rgba(179,45,45,1) 100%);
+	/*background: linear-gradient(45deg, #f06, yellow);;*/
+
+	background-size: 300% 75%;
+
+	mix-blend-mode: normal;
+
+
+	animation: btnAnim 60s ease infinite;
+}
+
+@keyframes btnAnim { 
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+#counter{font-family: 'Bungee', cursive;}

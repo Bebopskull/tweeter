@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+nav{
+	display:flex;
+	height: 100px;
+	width:100vw;
+	/*background-color: #4056A1;*/
+	/*background-color: #352525;*/
+	background-color: #fafa47;
+	padding:1.5em;
+
+	position: fixed;
+
+	justify-content: space-between;
+
+	
+}
+
+span{
+	color:#ff2222;
+	/*font-family: 'Bungee', cursive;*/
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title{
+	color:#ff2222;
+	font-family: 'Bungee', cursive;
+}
+
+
+/*Be 120 pixels in height
+Be the full width of the viewport.
+Have #4056A1 as its default background colour.
+Have #FFFFF as its default font colour
+The <span> within the <nav> has Bungee as it's default font-family
+The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges*/

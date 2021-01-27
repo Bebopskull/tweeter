@@ -7,23 +7,101 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+
+
+   <!--  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+    </style> -->
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/newTweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/ae57504edd.js" crossorigin="anonymous"></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+
+    <!-- other scripts -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/tweeterSelect.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span class='title'>tweeterio ;) </span>
+      <span><b>Write</b> a New Tweeto!</span>
+
+
     </nav>
 
+    <!-- header -->
+    <header class="header">
+      <div class="texture">
+        <div class='avatara'>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div class="userName">
+            <h2>Your Name</h2>
+        </div>
+      </div>
+    </header>
+
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+      <!-- <h2>Compose Tweet</h2> -->
+        <form method = 'POST' action = '/tweets'/>
+          <!-- <label for="tweet-text">What are you humming about?</label> -->
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <br>
+              <footer class = 'bajoTextInput' id='bajoTextInput'>
+                <button id='tweetBtn'type="submit">Tweet</button>
+                <output name="counter" class="counter" id="counter" for="tweet-text">140</output>
+              </footer> 
+        </form>
+      </section>
+      <section>
+        <article class="tweet">
+          <header class="tweetHead">
+            <div class='authorPresentation'>
+              <img class='tweetAvatar' src="https://i.imgur.com/73hZDYK.png">
+              <p class="tweetAuthorName"> Newton </p>
+            </div>
+
+            <p class="tweetAuthorTag">@SirIsaac</p>
+          
+          </header>
+          <div class="tweetContent">
+            <p> Este es el cuerpo del tweet </p>
+          </div>
+          <footer class='tweetFooter'>
+            <p class='date'>10 days ago</p>
+
+            y esta la colita.
+
+            <div class='tweetActions'>
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+            </div>
+          </footer>
+          
+        </article>
+      </section>
+    </main>
   </body>
 </html>

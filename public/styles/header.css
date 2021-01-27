@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+header{
+	display: flex;
+	height: 400px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 100px;
+
+	flex-direction: column;
+	
+
+	background: linear-gradient(45deg, rgba(179,45,45,1) 0%, rgba(45,150,191,1) 50%, rgba(179,45,45,1) 100%);
+	/*background: linear-gradient(45deg, #f06, yellow);;*/
+
+	background-size: 880% 200%;
+
+
+	animation: headerAnim 60s ease infinite;
+
+}
+
+@keyframes headerAnim { 
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+.texture{
+	display: flex;
+	height: 400px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+
+
+	flex-direction: column;
+	
+	mix-blend-mode: overlay;
+	background-color: #ffffff;
+	background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.avatara{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(179,45,45);
+	
+	background: green;
+
+	mix-blend-mode: color-burn;
+	/*mix-blend-mode: screen;*/
+	z-index: 1;
+
+}
+
+
+
+
+
+
+/*The header should have a height of 400px and be 100% the width of it's parent container
+
+
+The avatar should be centered vertically and horizontally 
+(Hint: the justify-content and align-items properties are helpful for centering things if you're using Flexbox.)
+The name should be centered below the avatar
+The background should be a different colour than the nav and the body
+The background-image should be a transparent pattern. Feel free to use this tool to assist: https://www.transparenttextures.com/*/
