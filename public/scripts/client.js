@@ -114,7 +114,7 @@ const createTweetElement = function(tweet) {
             <p id='tweetFrom${tweet.user.name}'>${escapa(tweet.content.text)}</p>
           </div>
           <footer class='tweetFooter'>
-            <p class='date'>${tweet.created_at}</p>
+            <p class='date'>${Date(tweet.created_at)}</p>
 
             <div class='tweetActions'>
               <i class="fas fa-flag"></i>
@@ -160,6 +160,6 @@ const escapa =  function(str) {
   return p.innerHTML;
 }
 
+
+
 loadTweets();
-// renderTweets(data);
-// console.log(renderTweets(data));
