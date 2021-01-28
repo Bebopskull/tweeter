@@ -29,6 +29,24 @@
 	size: 90vw;
 }
 
+.error{
+	display:flex;
+	justify-content: center;
+	background-color: #ff2222;
+	border: none;
+  
+  width: 70vw;
+  font-family: 'Bungee', cursive;
+  color:#fafa47;
+  padding:20px;
+  margin: 20px 0px;
+  font-size: 0.7em; 
+}
+
+.fa-exclamation-triangle{
+	margin-right: 5px;
+}
+
 #tweetBtn{
 
 	/*color:#ffffff;*/
@@ -57,3 +75,54 @@
 }
 
 #counter{font-family: 'Bungee', cursive;}
+
+
+/*///////DESKTOP MEDIA QUERY////////*/
+
+@media screen and (min-width: 1024px){
+
+	.new-tweet{
+
+		width: 55vw;
+		margin-top: 100px;
+		padding: 5vh 5vw;
+		margin-left: 40vw;
+		align-self: flex-end;
+
+	}
+
+	#tweet-text{
+		width: 55vw;
+		margin-left: 5vw;
+
+	}
+
+	#bajoTextInput{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		size: 55vw;
+		margin-left: 5vw;
+	}
+
+	.error{
+		display:flex;
+		justify-content: center;
+
+		background-color: #ff2222;
+		border: none;
+	  
+	  width: 40vw;
+	  font-family: 'Bungee', cursive;
+	  color:#fafa47;
+	  padding:20px;
+	  margin: 20px 0px 20px 5vw;
+	  font-size: 0.7em; 
+	}
+		
+
+
+
+}
+
+

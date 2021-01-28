@@ -68,8 +68,32 @@ header{
 }
 
 
+.userName{
+	mix-blend-mode: color-burn;
+}
 
+@media screen and (min-width: 1024px){
 
+	header{
+
+		width: 40vw;
+		height: 100vh;
+		position:fixed;
+	}
+
+	.texture{
+		height: 100vh;
+	}
+
+	.avatara{
+		height:50vh; 
+		width:50vh;
+	}
+	
+
+	
+
+}
 
 
 /*The header should have a height of 400px and be 100% the width of it's parent container

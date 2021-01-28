@@ -7,13 +7,23 @@
 	height: auto;
 	border: 4px solid #545149;
 	border-radius: 25;
-	overflow: none;
+	overflow: hidden;
+	margin-bottom: 10px;
 }
 
-/*.tweet:hover{
+.tweet:hover{
 	box-shadow: 5px 5px #545149;
-}*/
+	transform: scale(1.01);
+}
 
+.tweet:hover .tweetAuthorTag{
+	opacity: 1;
+	mix-blend-mode:color-dodge;
+}
+
+.tweet:hover .authorPresentation{
+	mix-blend-mode:color-dodge;
+}
 /*.tweet  .authorPresentation 
 	.tweetAuthorTag :hover{
 	mix-blend-mode: color-dodge;
@@ -23,9 +33,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 89vw;
+	width: 90vw;
 	height: 8vh;
 	margin-top: 0px;
+
+	/*padding-right: 20px;*/
 }
 
 .authorPresentation{
@@ -42,13 +54,14 @@
 
 .tweetAuthorTag{
 	mix-blend-mode:color-burn;
-	margin: 10px;
+	opacity:1;
+	margin: 20px;
 }
 
 .tweetContent{
 	display: flex;
-	width: 89vw;
-	height: 12vh;
+	width: 90vw;
+	height: auto;
 	border-bottom: 2px solid #545149;
 	/*justify-content: flex-end;*/
 	align-items: flex-end;
@@ -69,4 +82,37 @@
 	padding: 0px;
 	margin: 0px;
 	font-size: 0.8em;
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+	.tweet{
+		width: 55vw;
+		overflow: hidden;
+	}
+
+	.tweetHead{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 55vw;
+		height: 8vh;
+		margin-top: 0px;
+		position:relative;
+	}
+`
+	.tweetcontent{
+		width: 55vw;
+		
+		overflow-wrap: break-word; 
+	}
+	.tweetFooter{
+		width: 55vw;
+
+	}
+
+	
+
 }

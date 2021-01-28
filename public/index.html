@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
 
 
-   <!--  <style>
-      @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-    </style> -->
+    <style>
+      /*@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap');*/
+    </style>
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -29,13 +29,11 @@
 
     <script src="https://kit.fontawesome.com/ae57504edd.js" crossorigin="anonymous"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+
 
 
     <!-- other scripts -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <script type="text/javascript" src="/scripts/tweeterSelect.js"></script>
   </head>
 
   <body>
@@ -64,6 +62,7 @@
     <main class="container">
       <section class="new-tweet">
       <!-- <h2>Compose Tweet</h2> -->
+        <div class="error"> </div>
         <form method = 'POST' action = '/tweets'/>
           <!-- <label for="tweet-text">What are you humming about?</label> -->
             <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
@@ -74,34 +73,16 @@
               </footer> 
         </form>
       </section>
-      <section>
-        <article class="tweet">
-          <header class="tweetHead">
-            <div class='authorPresentation'>
-              <img class='tweetAvatar' src="https://i.imgur.com/73hZDYK.png">
-              <p class="tweetAuthorName"> Newton </p>
-            </div>
+      <section class="tweetsContainer">
+        
 
-            <p class="tweetAuthorTag">@SirIsaac</p>
-          
-          </header>
-          <div class="tweetContent">
-            <p> Este es el cuerpo del tweet </p>
-          </div>
-          <footer class='tweetFooter'>
-            <p class='date'>10 days ago</p>
 
-            y esta la colita.
-
-            <div class='tweetActions'>
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="far fa-heart"></i>
-            </div>
-          </footer>
-          
-        </article>
       </section>
     </main>
   </body>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+
+
 </html>

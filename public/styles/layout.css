@@ -52,8 +52,9 @@ p{
 
 
 section{
-	margin-bottom: 15px;
 	display: flex;
+	margin-bottom: 15px;
+	height: auto;
 }
 
 /*It should be only 90% of the width of its parent element
@@ -61,7 +62,30 @@ It should be center aligned to the body
 It should have the same colour background as the <body> element*/
 
 
+.tweetsContainer{
+	display: flex;
+	flex-direction: column;
+}
 
+/*///////DESKTOP MEDIA QUERY////////*/
+
+@media screen and (min-width: 1024px){
+
+	body{
+		flex-direction: row;
+	}
+
+	.tweetsContainer{
+		margin-left:40vw;
+
+		padding: 2.5vh 2.5vw;
+
+
+	}
+
+
+
+}
 
 
 
