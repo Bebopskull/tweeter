@@ -14,6 +14,7 @@ nav{
 
 	justify-content: space-between;
 
+	z-index: 1;
 	
 }
 
@@ -28,6 +29,19 @@ span{
 	font-family: 'Bungee', cursive;
 }
 
+.write{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fa-angle-double-down{
+	color:#ff2222;
+}
+
+.fa-angle-double-down:hover{
+	padding-top: 3px;
+}
 
 /*Be 120 pixels in height
 Be the full width of the viewport.

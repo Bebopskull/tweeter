@@ -6,25 +6,39 @@
 // Fake data taken from initial-tweets.json
 
 
+$('form').hide();
+
+/////new tweet form button behaviour/////
+
+$(".fa-angle-double-down").on('click',function(event){
+  console.log('ahora shi')
+  $('form').slideToggle('300');
+  $('.error').slideUp(300);
+
+});
+
+
 ///form behaviour
 $('form').on('submit', function(event){
+
+
 
 	event.preventDefault();
 
 	console.log('submiting tweet!');
 
 	const neewTweetTextBox = $(this).children('#tweet-text');
-	$('.error').hide(300);
+	$('.error').slideUp(300);
 
 
 	if(!neewTweetTextBox.val()){
-		$('.error').show(500);
+		$('.error').slideDown(500);
 		$('.error').html("<i class='fas fa-exclamation-triangle'></i> Actually, type it out loud before sharing...!!");
 		return
 	}
 
 	if(neewTweetTextBox.val().length > 140){
-		$('.error').show(500);
+		$('.error').slideDown(500);
 		$('.error').html("<i class='fas fa-exclamation-triangle'></i> Well, look at the number under your text, you overthe limit...");
 		return
 	}
@@ -41,11 +55,9 @@ $('form').on('submit', function(event){
 	})	
 	.done(function(result) {
       $(".tweetsContainer").empty();
-      console.log( neewTweetTextBox.val());
-
+      // $(".tweetsContainer").reset();
       loadTweets();
-      neewTweetTextBox.val() = '';
-      
+
     })
     .fail(function(error) {
       // Problem with the request
@@ -57,21 +69,14 @@ $('form').on('submit', function(event){
       // console.log(req.header);
     });
 
+
+
 });
 
 
 
-// $(document).ready(function() {
-//   requestPosts('GET', ROOT_URL);
 
-//   // event listener for click on the link with an id of load-more
-//   $('form').on('click', function(event) {
-//     // defaut the default behavior of the link
-//     event.preventDefault();
-
-//     requestPosts('GET', ROOT_URL);
-//   });
-// });
+////error behaviour////
 
 $('.error').hide();
 //renderTweets
