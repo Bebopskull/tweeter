@@ -77,13 +77,13 @@
 	justify-content: space-between;
 	align-items: center;
 	padding:10px;
+	font-size: .7em;
 }
 
-.tweetFooter p{
-	padding: 0px;
-	margin: 0px;
-	font-size: 0.8em;
+.tweetActions{
+	mix-blend-mode: color-dodge;
 }
+
 
 
 /*media queries*/
