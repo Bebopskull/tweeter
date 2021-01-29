@@ -55,7 +55,9 @@ $('form').on('submit', function(event){
 	})	
 	.done(function(result) {
       $(".tweetsContainer").empty();
-      // $(".tweetsContainer").reset();
+      neewTweetTextBox.val('');
+      neewTweetTextBox.val().length;
+      $('.counter').html(140);
       loadTweets();
 
     })
