@@ -9,8 +9,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 !['Tweet Something!']( https://github.com/Bebopskull/tweeter/blob/master/public/docs/tweeterio%20ss2.png)
 
-!['Mobile version']( https://github.com/Bebopskull/tweeter/blob/master/public/docs/tweeterio_mobile.png)
-
 ## Dependencies
 
 - Express
